@@ -9,8 +9,8 @@ func main() {
 	mu := sync.Mutex{}
 	wg := sync.WaitGroup{}
 	resultPath := dir.Dir()
-	wg.Add(1000000)
-	for i := 0; i < 1000000; i++ {
+	wg.Add(100000)
+	for i := 0; i < 100000; i++ {
 
 		go func(i int) {
 			mu.Lock()
